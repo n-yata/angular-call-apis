@@ -1,0 +1,15 @@
+<form>
+    <label for="url">URL:</label>
+    <input id="url" name="url" type="url" size="50" [(ngModel)]="targetUrl">
+    <input type="button" (click)="onclick()" value="検索">
+</form>
+<br>
+<div>{{count}}件</div>
+<div *ngIf="!comments.length">
+    <p>No Results.</p>
+</div>
+<ul>
+    <li *ngFor="let comment of comments">
+        {{comment}}
+    </li>
+</ul>
