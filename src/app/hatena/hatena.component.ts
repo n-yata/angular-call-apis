@@ -7,7 +7,7 @@ import { HatenaService } from '../service/hatena.service';
   styleUrls: ['./hatena.component.css']
 })
 export class HatenaComponent {
-  targetUrl: string = '';
+  targetUrl: string = 'https://angular.jp/';
   count: number = 0;
   comments: string[] = [];
 
